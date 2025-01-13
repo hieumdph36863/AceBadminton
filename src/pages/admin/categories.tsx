@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ProductList = () => {
+const Categories = () => {
   // State để điều khiển modal (mở/đóng)
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -106,4 +106,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default Categories;

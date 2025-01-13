@@ -1,25 +1,27 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LayoutAdmin from '../pages/admin/page';
-import ProductList from '../pages/admin/productList';
 import Dashbord from '../pages/admin/dashbord';
+import LayoutWebsite from '../pages/client/layoutWebsite';
+import Categories from '../pages/admin/categories';
 
 const Router = () => {
   return (
     <Routes>
-      {/* Route cha: LayoutAdmin */}
-      <Route path="/" element={<LayoutAdmin />}>
-        {/* Route con */}
-        <Route index element={<Dashbord />} />
-        <Route path="products" element={<ProductList />} />
-        {/* Thêm các route con khác nếu cần */}
-        {/* <Route path="products/add" element={<ProductAddPage />} /> */}
-        {/* <Route path="products/:id/edit" element={<ProductEditPage />} /> */}
-      </Route>
+    {/* Routes cho Admin */}
+    <Route path="/admin" element={<LayoutAdmin />}>
+      <Route index element={<Dashbord />} />
+      <Route path="categories" element={<Categories />} />
+    </Route>
+
+    {/* Routes cho Website */}
+    <Route path="/" element={<LayoutWebsite />}>
       
-      {/* Route không tìm thấy */}
-      {/* <Route path="*" element={<NotFoundPage />} /> */}
-    </Routes>
+    </Route>
+
+    {/* Route không tìm thấy */}
+    <Route path="*" element={<div>Page Not Found</div>} />
+  </Routes>
   );
 };
 
