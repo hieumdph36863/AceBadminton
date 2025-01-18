@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import NavBar from './layout/navbar';
 import Header from './layout/header';
-import Dashbord from './dashbord';
+
 
 const LayoutAdmin = () => {
   return (

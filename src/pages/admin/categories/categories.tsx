@@ -55,9 +55,7 @@ const Categories = () => {
                 </button>
               </div>
             </div>
-          </div>
-
-          <div className="block w-full overflow-x-auto">
+            <div className="block w-full overflow-x-auto">
             <table className="items-center w-full bg-transparent border-collapse">
               <thead>
                 <tr>
@@ -72,6 +70,7 @@ const Categories = () => {
               </tbody>
             </table>
           </div>
+          </div>
         </div>
       </div>
 
@@ -80,7 +79,7 @@ const Categories = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-1/3">
           <div className='flex justify-between items-center'>  
-            <h2 className="text-xl font-semibold mb-4">Modal Content</h2>
+            <h2 className="text-xl font-semibold mb-4">Category Add</h2>
             <button onClick={closeModal} className=' w-7 h-7 rounded-lg hover:border-gray-200'>
             <i className="fas fa-times text-gray-500 text-xl hover:text-red-500"></i>
 
@@ -89,7 +88,7 @@ const Categories = () => {
           
            <form action="">
             <div className='space-y-3'>
-                <label htmlFor="" >Tên danh mục</label> 
+                <label>Tên danh mục</label> 
                 <input
   type="text"
   className="w-full h-10 border rounded-lg border-gray-300 hover:border-blue-300 focus:border-blue-300 focus:outline-none focus:text-gray-700 transition-colors"

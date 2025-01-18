@@ -332,25 +332,9 @@ const HeaderWeb = () => {
               <span className="d-inline-block ms-2 text-uppercase align-middle fw-medium">My Account</span>
             </div>
 
-            <div className="container d-flex align-items-center">
-              <label htmlFor="footerSettingsLanguage_mobile" className="me-2 text-secondary">Language</label>
-              <select id="footerSettingsLanguage_mobile" className="form-select form-select-sm bg-transparent border-0" aria-label="Default select example" name="store-language">
-                <option className="footer-select__option" selected>United Kingdom | English</option>
-                <option className="footer-select__option" value="1">United States | English</option>
-                <option className="footer-select__option" value="2">German</option>
-                <option className="footer-select__option" value="3">French</option>
-                <option className="footer-select__option" value="4">Swedish</option>
-              </select>
-            </div>
+          
 
-            <div className="container d-flex align-items-center">
-              <label htmlFor="footerSettingsCurrency_mobile" className="me-2 text-secondary">Currency</label>
-              <select id="footerSettingsCurrency_mobile" className="form-select form-select-sm bg-transparent border-0" aria-label="Default select example" name="store-language">
-                <option selected>$ USD</option>
-                <option value="1">£ GBP</option>
-                <option value="2">€ EURO</option>
-              </select>
-            </div>
+          
 
             <ul className="container social-links list-unstyled d-flex flex-wrap mb-0">
               <li>
@@ -415,18 +399,7 @@ const HeaderWeb = () => {
                   <svg className="svg-icon svg-icon_pinterest" width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"><use href="#icon_pinterest" /></svg>
                 </a>
               </li>
-            </ul>
-            <select className="form-select form-select-sm bg-transparent color-white" name="store-language">
-              <option value="english" selected>English</option>
-              <option value="german">German</option>
-              <option value="french">French</option>
-              <option value="swedish">Swedish</option>
-            </select>
-            <select className="form-select form-select-sm bg-transparent color-white" name="store-currency">
-              <option value="usd" selected>$ USD</option>
-              <option value="gbp">£ GBP</option>
-              <option value="eur">€ EURO</option>
-            </select>
+            </ul>  
           </div>
         </div>
         <div className="header-desk header-desk_type_2">
