@@ -1,12 +1,13 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import LayoutAdmin from '../pages/admin/page';
+import LayoutAdmin from '../components/LayoutAdmin';
 import Dashbord from '../pages/admin/dashbord';
 import LayoutWebsite from '../pages/client/layoutWebsite';
 import Categories from '../pages/admin/categories/categories';
 import Home from '../pages/client/home/home';
 import Products from '../pages/admin/products/products';
 import Product from '../pages/client/details/product';
+import Cart from '../pages/client/cart/cart';
 
 const Router = () => {
   return (
@@ -22,7 +23,7 @@ const Router = () => {
     <Route path="/" element={<LayoutWebsite />}>
     <Route index element={<Home/>} />
     <Route path='product' element={<Product/>} />
-   
+    <Route path='cart' element={<Cart/>} />   
     </Route>
 
     {/* Route không tìm thấy */}

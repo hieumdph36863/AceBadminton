@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AddProduct from './modal/addProduct';
+import axios from '../../../util/axios.customize';
 
 const Products = () => {
   // State để điều khiển modal
@@ -15,6 +16,15 @@ const Products = () => {
     setIsProductModalOpen(false);
   };
 
+
+  useEffect(()=>{
+    const fetchData = async ()=>{
+     const res = await axios.get(`/v1/api/`);
+     console.log('check', res);
+     
+    }
+    fetchData();
+  },[])
   return (
     <div className="p-6">
       <div className="grid grid-cols-1 lg:grid-cols-1 gap-6 mb-6">
